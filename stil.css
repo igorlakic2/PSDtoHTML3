@@ -4,6 +4,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+.h2Title {
+  font-family: "Quattrocento Sans", sans-serif;
+  color: black;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+}
+.h2Title span {
+  font-weight: bold;
+}
+
 header {
   background-image: url("img/home-bg.jpg");
   background-position: center;
@@ -21,6 +32,9 @@ header .gradient nav {
   width: 85%;
   margin: auto;
 }
+header .gradient nav div {
+  float: right;
+}
 header .gradient nav div ul li {
   list-style-type: none;
   display: inline-block;
@@ -32,6 +46,9 @@ header .gradient nav div ul li a {
   color: white;
   text-decoration: none;
 }
+header .gradient nav div ul li a .active {
+  color: #f2b31a;
+}
 header .gradient nav div ul li .active {
   color: #f2b31a;
 }
@@ -41,7 +58,7 @@ header .gradient .home {
   height: 100%;
   margin: auto;
   text-align: center;
-  padding: 200px 0;
+  padding: 250px 0;
   line-height: 45px;
 }
 header .gradient .home h1 {
@@ -52,6 +69,50 @@ header .gradient .home p {
   margin: auto;
   line-height: 32px;
   padding: 35px 0;
+}
+
+#features {
+  margin: auto;
+  padding: 60px 0;
+  width: 85%;
+}
+#features .features1, #features .features2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 70px 0;
+}
+#features .features1 div, #features .features2 div {
+  flex: 1;
+}
+#features .features1 .featuresTxt, #features .features2 .featuresTxt {
+  padding: 50px 20px;
+  line-height: 25px;
+}
+#features .features1 .featuresTxt .line, #features .features2 .featuresTxt .line {
+  height: 2px;
+  width: 70px;
+  background-color: #f2b31a;
+  margin: auto;
+}
+#features .features1 .featuresTxt p, #features .features2 .featuresTxt p {
+  padding: 0 40px 30px 40px;
+  font-size: 15px;
+  color: #6c757d;
+}
+#features .features1 .featuresTxt a, #features .features2 .featuresTxt a {
+  text-decoration: none;
+  font-weight: bold;
+}
+#features .features1 .featuresTxt a:hover, #features .features2 .featuresTxt a:hover {
+  color: #f2b31a;
+}
+#features .features2 {
+  flex-direction: row-reverse;
+}
+
+.active {
+  color: #f2b31a;
 }
 
 /*# sourceMappingURL=stil.css.map */

@@ -111,6 +111,42 @@ header .gradient .home p {
   flex-direction: row-reverse;
 }
 
+section {
+  background-color: #f2b31a;
+  color: white;
+}
+section div {
+  padding: 70px 0;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+}
+section div h2 {
+  padding-top: 6px;
+}
+section div button {
+  border: 1px solid white;
+  background-color: #f2b31a;
+  color: white;
+  border-radius: 5px;
+  font-weight: bolder;
+  padding: 13px 11px;
+  outline: none;
+  cursor: pointer;
+}
+section div button:hover {
+  color: black;
+  background-color: white;
+}
+
+#services {
+  width: 85%;
+  margin: auto;
+  padding: 70px 0;
+}
+
 .active {
   color: #f2b31a;
 }

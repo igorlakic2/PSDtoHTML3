@@ -120,6 +120,40 @@ header{
         flex-direction: row-reverse;
     }
 }
+section{
+    background-color: $activeColor;
+    color: white;
+    div{
+        padding: 70px 0;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: normal;
+        h2{
+            padding-top: 6px;
+        }
+        button{
+            border: 1px solid white;
+            background-color: $activeColor;
+            color: white;
+            border-radius: 5px;
+            font-weight: bolder;
+            padding: 13px 11px;
+            outline: none;
+            cursor: pointer;
+            &:hover{
+                color: black;
+                background-color: white;
+            }
+        }
+    }
+}
+#services{
+    width: 85%;
+    margin: auto;
+    padding: 70px 0;
+}
 
 .active{
     color: $activeColor;

@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stil.css">
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e12e597284.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>        
-        <div class="gradient">        
-            <nav>
+        <div class="gradient sctn">        
+            <nav class="navigation">
                 <div>
                     <ul>
-                        <li><a class="navLink" href="">HOME</a></li>
+                        <li><a class="navLink active" href="#home">HOME</a></li>
                         <li><a class="navLink" href="#features">FEATURES</a></li>
                         <li><a class="navLink" href="#services">SERVICES</a></li>
-                        <li><a class="navLink" href="">CLIENT</a></li>
+                        <li><a class="navLink" href="#client">CLIENT</a></li>
                         <li><a class="navLink" href="">TEAM</a></li>
                         <li><a class="navLink" href="">PRICING</a></li>
                         <li><a class="navLink" href="">CONTACT</a></li>
@@ -24,7 +24,7 @@
                 </div>
             </nav>
 
-            <div class="home">
+            <div id="home" class="home">
                 <h1 id="homeh1">­ </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
                     et dolore magna aliqua.</p>
@@ -32,7 +32,7 @@
         </div>
     </header>
 
-    <div id="features">
+    <div id="features" class="sctn">
         <h2 class="h2Title">Our <span>Features</span></h2>
         <div class="features1">
             <div><img src="img/mockup1.png" alt=""></div>
@@ -60,11 +60,91 @@
     <section>
         <div>
             <h2>Become a part of Linexon bussiness community today</h2>
-            <button>GET STARTED</button>
+            <a href=""><button>GET STARTED</button></a>
         </div>
     </section>
-    <div id="services">
+    <div id="services" class="sctn">
         <h2 class="h2Title">Best <span>Services</span></h2>
+        <div class="services1">
+            <div class="service">
+                <div class="left"><i class="fa fa-code"></i></div>
+                <div class="right">
+                    <h3>Digital Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                        dolore mag na aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="left"><i class="fa fa-cubes"></i></div>
+                <div class="right">
+                    <h3>Unlimited Colors</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                        dolore mag na aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="left"><i class="fas fa-chart-line"></i></div>
+                <div class="right">
+                    <h3>Strategy Solutions</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                        dolore mag na aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="left"><i class="far fa-images"></i></div>
+                <div class="right">
+                    <h3>Awesome Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                        dolore mag na aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="left"><i class="fas fa-laptop-house"></i></div>
+                <div class="right">
+                    <h3>Truly Multipurpose</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                        dolore mag na aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="left"><i class="fas fa-cloud-download-alt"></i></div>
+                <div class="right">
+                    <h3>Easy to customize</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                        dolore mag na aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div id="client" class="sctn">        
+        <h2 class="h2Title">Our <span>Client</span></h2>
+        <i class="fas fa-quote-left"></i>
+        <p>It is a long established fact that a reader will be distracted by the readable 
+            content of a page when looking at its layout. The point of using Lorem Ipsum is 
+            that it has a more-or-less.
+        </p>
+        <img src="img/user-1.png" alt="">
+        <div>
+            <p style="color: #6c757d; font-style: normal;">-Landing page User</p>
+            <p class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,11 +1,12 @@
 $activeColor: #f2b31a;
-
 *{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 .h2Title{
+    padding: 30px 0 0 0;
     font-family: 'Quattrocento Sans', sans-serif;
     color: black;
     font-weight: normal;
@@ -15,6 +16,7 @@ $activeColor: #f2b31a;
         font-weight: bold;
     }
 }
+
 header{
     background-image: url('img/home-bg.jpg');
     background-position: center;
@@ -30,11 +32,15 @@ header{
         //color: white;
 
         nav{
-            width: 85%;
+            margin: auto;
+        }
+
+        .navigation{
+            width: 100%;
             margin: auto;  
-            //position: fixed;
+            position: fixed;
             div{
-                float: right;
+                //float: right;
                 ul{
                     li{
                         list-style-type: none;
@@ -59,6 +65,26 @@ header{
             }
             
         }
+
+        .fixnav{
+            width: 100%;
+            box-shadow: -2px 4px 45px -12px rgba(0,0,0,0.69);
+            div{
+                width: 100%;
+                margin: auto;
+                background-color: white;
+                color: black;
+                ul{
+                    li{
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+        
+            }
+        }
+         
         .home{
             color: white;
             width: 100%;
@@ -83,7 +109,7 @@ header{
 
 #features{
     margin: auto;
-    padding: 60px 0;
+    padding: 70px 0;
     width: 85%;
     .features1, .features2{
         display: flex;
@@ -153,8 +179,74 @@ section{
     width: 85%;
     margin: auto;
     padding: 70px 0;
+    .services1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px 0;
+        .service{
+            flex: 30%;
+            padding: 20px;
+            border: 1px solid gainsboro;
+            display: flex;
+            margin: 15px;
+            border-radius: 5px;
+            .left{
+                width: 50px;
+                height: 50px;
+                padding: 35px 40px 0 0;
+                i{
+                    color: $activeColor;
+                    width: 50px;
+                    height: 50px;
+                    font-size: 33px;
+                }
+            }
+            .right{
+                padding: 0 0 0 20px;
+                h3{
+                    font-size: 17px;
+                }
+                p{
+                    color: darkgrey;
+                    font-size: 15px;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
 }
-
+#client{
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 70px 0;
+    i{
+        color: #6c757d;
+        font-size: 30px;
+        margin: 60px 0 30px 0; 
+    }
+    p{
+        width: 53%;
+        color: #252525;
+        text-align: center;
+        margin: auto;
+        font-style: italic;
+        font-size: 16px;
+    }
+    img{
+        border-radius: 30px;
+        margin: 25px 0;
+    }
+    div{        
+        .stars{
+            i{
+                color: $activeColor;
+                font-size: 18px;
+                margin: 20px 0 30px 0;
+            }
+        }
+    }
+}
 .active{
     color: $activeColor;
 }

@@ -45,12 +45,10 @@ let navLinks = document.querySelectorAll(".navLink");
 const activeNavigation = () => {   
     for(let i=0; i<sections.length; i++) {
         navLinks[i].classList.remove("active");
-        //navLinks[i].style.color = 'black';
 
-        if(window.scrollY > (sections[i].offsetTop -5) && window.scrollY < (sections[i].offsetTop + sections[i].offsetHeight)){
+        if((window.scrollY + 2) > (sections[i].offsetTop -3) && window.scrollY < (sections[i].offsetTop + sections[i].offsetHeight)){
             console.log(navLinks[i].textContent);
             navLinks[i].classList.add("active");
-            //navLinks[i].style.color = '#f2b31a';
         }
     }
 }

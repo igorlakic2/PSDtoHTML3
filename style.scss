@@ -16,7 +16,9 @@ $activeColor: #f2b31a;
         font-weight: bold;
     }
 }
-
+.active{
+    color: $activeColor;
+}
 header{
     background-image: url('img/home-bg.jpg');
     background-position: center;
@@ -310,7 +312,7 @@ section{
             border-radius: 4px;
             margin: 70px 50px;
             text-align: center;          
-            border: 1px solid #989898;;
+            border: 1px solid gainsboro;;
             background-color: white;
             h1{
                 font-weight: normal;
@@ -350,6 +352,49 @@ section{
         }
     }
 }
-.active{
-    color: $activeColor;
+#contact{
+    padding: 70px 0;
+    .contact1{
+        width: 85%;
+        margin: auto;
+        padding: 70px 0 0 0;
+        .row{
+            display: flex;
+            justify-content: space-between;           
+            width: 100%; 
+            div{
+                width: 32%;
+                input{
+                    width: 100%;
+                    padding: 10px 7px;
+                    margin: 10px 0 0 0;
+                    outline: none;
+                    border: 1px solid gainsboro;
+                    border-radius: 5px;
+                    &:focus{
+                        border: 1px solid $activeColor;
+                    }
+                }
+            }
+        }
+        textarea{
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            padding: 10px 7px;
+            margin: 10px 0 0 0;
+            outline: none;
+            &:focus{
+                border: 1px solid $activeColor;
+            }
+        }
+    }
+}
+footer{
+    .footer1{}
+    .footer2{
+        background-color: #343a40;
+        padding: 20px 0;
+        color: #9a9da0;
+        text-align: center;
+    }
 }

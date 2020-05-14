@@ -17,6 +17,10 @@
   font-weight: bold;
 }
 
+.active {
+  color: #f2b31a;
+}
+
 header {
   background-image: url("img/home-bg.jpg");
   background-position: center;
@@ -296,7 +300,7 @@ section div button:hover {
   border-radius: 4px;
   margin: 70px 50px;
   text-align: center;
-  border: 1px solid #989898;
+  border: 1px solid gainsboro;
   background-color: white;
 }
 #pricing .pricing1 .pricingCard h1 {
@@ -335,8 +339,49 @@ section div button:hover {
   cursor: pointer;
 }
 
-.active {
-  color: #f2b31a;
+#contact {
+  padding: 70px 0;
+}
+#contact .contact1 {
+  width: 85%;
+  margin: auto;
+  padding: 70px 0 0 0;
+}
+#contact .contact1 .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#contact .contact1 .row div {
+  width: 32%;
+}
+#contact .contact1 .row div input {
+  width: 100%;
+  padding: 10px 7px;
+  margin: 10px 0 0 0;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+#contact .contact1 .row div input:focus {
+  border: 1px solid #f2b31a;
+}
+#contact .contact1 textarea {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 10px 7px;
+  margin: 10px 0 0 0;
+  outline: none;
+}
+#contact .contact1 textarea:focus {
+  border: 1px solid #f2b31a;
+}
+
+footer .footer2 {
+  background-color: #343a40;
+  padding: 20px 0;
+  color: #9a9da0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=stil.css.map */

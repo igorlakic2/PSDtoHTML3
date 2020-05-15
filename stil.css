@@ -244,6 +244,7 @@ section div button:hover {
   width: 80%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 #team .teamCards .teamCard {
   border: 1px solid gainsboro;
@@ -253,8 +254,8 @@ section div button:hover {
 }
 #team .teamCards .teamCard img {
   border-radius: 50%;
-  padding: 30px 65px;
-  width: 100%;
+  padding: 40px 0px;
+  width: 50%;
   height: auto;
 }
 #team .teamCards .teamCard h4 {
@@ -302,13 +303,14 @@ section div button:hover {
   text-align: center;
   border: 1px solid gainsboro;
   background-color: white;
+  width: 30%;
 }
 #pricing .pricing1 .pricingCard h1 {
   font-weight: normal;
   padding: 20px 10px;
 }
 #pricing .pricing1 .pricingCard .priceDiv {
-  margin: 20px 90px;
+  margin: auto;
   padding: 14px 0;
   border-radius: 50%;
   width: 110px;
@@ -376,12 +378,226 @@ section div button:hover {
 #contact .contact1 textarea:focus {
   border: 1px solid #f2b31a;
 }
+#contact button {
+  color: white;
+  background-color: #f2b31a;
+  outline: none;
+  border: none;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 3px 0 20px 0;
+  cursor: pointer;
+}
 
 footer .footer2 {
   background-color: #343a40;
   padding: 20px 0;
   color: #9a9da0;
   text-align: center;
+}
+
+#mobileNav {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: white;
+}
+#mobileNav #hamburgerMenuBtn i {
+  padding: 12px 15px;
+  color: black;
+  font-size: 35px;
+}
+#mobileNav #hamburgerMenuBtn div {
+  width: 25px;
+  height: 7px;
+  display: block;
+  background-color: black;
+}
+#mobileNav p {
+  color: black;
+  font-size: 20px;
+  padding: 20px 50px;
+  width: 100%;
+}
+
+#navModal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#navModal div {
+  width: 200px;
+  height: auto;
+  margin: auto;
+}
+#navModal div nav {
+  margin: 50px 0;
+}
+#navModal div nav ul {
+  padding: 0;
+  text-align: center;
+}
+#navModal div nav ul li {
+  list-style-type: none;
+  padding: 10px 0;
+  font-size: 25px;
+}
+#navModal div nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.modalToggler {
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  #features .features1 .featuresTxt, #features .features2 .featuresTxt {
+    padding: 20px;
+  }
+
+  header .gradient .home h1 {
+    font-size: 43px;
+  }
+
+  #team .teamCards .teamCard {
+    flex: 40%;
+  }
+  #team .teamCards .teamCard img {
+    padding: 10px 0px;
+    width: 35%;
+  }
+}
+@media (max-width: 850px) {
+  header .gradient .home h1 {
+    font-size: 37px;
+    padding: 0 7px;
+  }
+
+  #features .features1, #features .features2 {
+    flex-direction: column;
+    padding: 60px 0 0 0;
+  }
+
+  #pricing .pricing1 .pricingCard {
+    margin: 50px 20px;
+  }
+}
+@media (max-width: 730px) {
+  header .gradient .navigation div ul {
+    padding: 10px 0;
+  }
+  header .gradient .navigation div ul li {
+    padding: 10px 5px;
+  }
+
+  #services .services1 .service {
+    flex-direction: column;
+  }
+  #services .services1 .service .left {
+    padding: 0;
+    margin: auto;
+    text-align: center;
+  }
+  #services .services1 .service .right {
+    text-align: center;
+    padding: 0;
+  }
+
+  #features .features1 img, #features .features2 img {
+    width: 100%;
+  }
+
+  #pricing .pricing1 .pricingCard {
+    margin: 50px 0;
+  }
+  #pricing .pricing1 .pricingCard h1 {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 480px) {
+  #mobileNav {
+    display: flex;
+    box-shadow: -2px 4px 45px -12px rgba(0, 0, 0, 0.69);
+    position: fixed;
+  }
+
+  header .gradient .fixnav {
+    display: none;
+  }
+  header .gradient .navigation {
+    display: none;
+  }
+  header .gradient .navigation div ul {
+    padding: 5px 0;
+  }
+  header .gradient .navigation div ul li {
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  #team .teamCards .teamCard {
+    margin: 10px 20px;
+  }
+  #team .teamCards .teamCard img {
+    width: 25%;
+  }
+  #team .teamCards .teamCard button {
+    margin: 4px;
+  }
+  #team .teamCards .teamCard p {
+    padding: 0 0 5px 0;
+  }
+
+  section div {
+    padding: 20px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  section div a {
+    padding: 20px 0;
+  }
+
+  #services .services1 .service {
+    flex: 50%;
+  }
+
+  #pricing .pricing1 {
+    flex-wrap: wrap;
+  }
+  #pricing .pricing1 .pricingCard {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  #pricing .pricing1 .pricingCard h1 {
+    padding: 5px 0;
+  }
+  #pricing .pricing1 .pricingCard .priceDiv {
+    width: 90px;
+    height: 90px;
+    padding: 17px;
+  }
+  #pricing .pricing1 .pricingCard p {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 400px) {
+  #contact .contact1 .row {
+    flex-direction: column;
+  }
+  #contact .contact1 .row div {
+    width: 100%;
+    margin: 7px 0;
+  }
 }
 
 /*# sourceMappingURL=stil.css.map */

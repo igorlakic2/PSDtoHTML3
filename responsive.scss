@@ -1,0 +1,193 @@
+@media (max-width: 1100px) {
+    #features{
+        .features1, .features2{
+            .featuresTxt{
+                padding: 20px;
+            }
+        }
+    }
+    header {
+        .gradient {
+            .home {
+                h1{
+                    font-size: 43px;
+                }
+            }
+        }
+    }
+    #team {
+        .teamCards {
+            .teamCard{
+                flex: 40%;
+                img{
+                    padding: 10px 0px;
+                    width: 35%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    header {
+        .gradient {
+            .home {
+                h1{
+                    font-size: 37px;
+                    padding: 0 7px;
+                }
+            }
+        }
+    }
+    #features{
+        .features1, .features2{
+            flex-direction: column;
+            padding: 60px 0 0 0;
+        }
+    }
+    #pricing {
+        .pricing1 {
+            .pricingCard{
+                margin: 50px 20px;
+            }
+        }
+    }
+}
+@media (max-width: 730px){
+    header {
+        .gradient {
+            .navigation {
+                div {
+                    ul {
+                        padding: 10px 0;
+                        li{
+                            padding: 10px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #services {
+        .services1 {
+            .service{
+                flex-direction: column;
+                .left{
+                    padding: 0;
+                    margin: auto;
+                    text-align: center;
+                }
+                .right{
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    #features{
+        .features1, .features2{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #pricing {
+        .pricing1 {
+            .pricingCard {
+                margin: 50px 0;
+                h1{
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px){
+    #mobileNav{
+        display: flex;
+        box-shadow: -2px 4px 45px -12px rgba(0,0,0,0.69);
+        position: fixed;
+    }
+    header{
+        .gradient{
+            .fixnav{
+                display: none;
+            }
+            .navigation{
+                display: none;
+                div{
+                    ul{
+                        padding: 5px 0;
+                        li{
+                            display: block;
+                            padding: 5px 0;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #team {
+        .teamCards {
+            .teamCard {
+                margin: 10px 20px;
+                img{
+                    width: 25%;
+                }
+                button{
+                    margin: 4px;
+                }
+                p{
+                    padding: 0 0 5px 0;
+                }
+            }
+        }
+    }
+    section{
+        div{
+            padding: 20px 0;
+            flex-direction: column;
+            text-align: center;
+            a{
+                padding: 20px 0;
+            }
+        }
+    }
+    #services .services1 .service{
+        flex: 50%;
+    }
+    #pricing{
+        .pricing1{
+            flex-wrap: wrap;
+            .pricingCard{
+                width: 100%;
+                margin: 30px 0 0 0;
+                h1{
+                    padding: 5px 0;
+                }
+                .priceDiv{
+                    width: 90px;
+                    height: 90px;
+                    padding: 17px;
+                }
+                p{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    #contact {
+        .contact1 {
+            .row{
+                flex-direction: column;
+                div{
+                    width: 100%;
+                    margin: 7px 0;
+                    
+                }
+            }
+        }
+    }
+}

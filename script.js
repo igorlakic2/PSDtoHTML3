@@ -41,6 +41,7 @@ window.addEventListener("scroll", event => {
 
 let sections = document.querySelectorAll(".sctn");
 let navLinks = document.querySelectorAll(".navLink");
+let mobileActiveLink = document.querySelector(".activeLink");
 
 const activeNavigation = () => {   
     for(let i=0; i<sections.length; i++) {
@@ -49,6 +50,7 @@ const activeNavigation = () => {
         if((window.scrollY + 2) > (sections[i].offsetTop -3) && window.scrollY < (sections[i].offsetTop + sections[i].offsetHeight)){
             console.log(navLinks[i].textContent);
             navLinks[i].classList.add("active");
+            mobileActiveLink.innerHTML = navLinks[i].textContent;
         }
     }
 }
@@ -65,4 +67,25 @@ const fixedNavigation = () => {
 window.addEventListener('scroll', () => {
     fixedNavigation();
     activeNavigation();
+});
+
+let hamburgerMenuBtn = document.querySelector("#hamburgerMenuBtn");
+let modal = document.querySelector("#navModal");
+
+hamburgerMenuBtn.addEventListener('click', () => {
+    modal.style.display = "block";
+})
+
+window.addEventListener('click', (event) => {
+    if(event.target === modal){
+        modal.style.display = "none";
+    }
+});
+
+let navLinksMobile = document.querySelectorAll(".navLinkMobile");
+
+navLinksMobile.forEach(link => {
+    link.addEventListener('click', () => {
+        modal.style.display = "none";
+    });
 });
